@@ -1,6 +1,6 @@
 require_relative "graph"
 require_relative "node"
-require_relative "depth_first_search"
+require_relative "breath_first_search"
 
 graph = Graph.new
 
@@ -17,9 +17,7 @@ graph.add_edge(node2, node3)
 graph.add_edge(node2, node4)
 graph.add_edge(node4, node5)
 
-p DepthFirstSearch.new(graph, node1).path_to(node5).map(&:to_s)
-# Node #1, Node #2, Node #4, Node #5
-#
-# Really long path.
-# If you want to see the shortest path (fewest number of edges),
-# take a look at the breath first search.
+p BreathFirstSearch.new(graph, node1).shortest_path_to(node5).map(&:to_s)
+# => Node #1, Node#5
+# Shortest path possible, try comparing it with the output of
+# the depth first search.
