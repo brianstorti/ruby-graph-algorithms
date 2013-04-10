@@ -16,7 +16,6 @@ class BreathFirstSearch
     @node = source_node
     @visited = []
     @edge_to = {}
-    @distance_to = {}
 
     dfs(source_node)
   end
@@ -36,6 +35,12 @@ class BreathFirstSearch
 
   private
   def dfs(node)
+    # Remember, in the breath first search we always
+    # use a queue. In ruby we can represent both
+    # queues and stacks as an Array, just by using
+    # the correct methods to deal with it. In this case,
+    # we use the "shift" method to remove an element
+    # from the beginning of the Array.
     queue = []
     queue << node
     @visited << node
@@ -51,6 +56,8 @@ class BreathFirstSearch
     end
   end
 
+  # If we visited the node, so there is a path
+  # from our source node to it.
   def has_path_to?(node)
     @visited.include?(node)
   end
