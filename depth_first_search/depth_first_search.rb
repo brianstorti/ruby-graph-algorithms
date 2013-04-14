@@ -2,7 +2,7 @@ class DepthFirstSearch
   def initialize(graph, source_node)
     @graph = graph
     @node = source_node
-    @marked = {}
+    @visited = []
     @edge_to = {}
 
     dfs(source_node)
@@ -26,9 +26,9 @@ class DepthFirstSearch
 
   private
   def dfs(node)
-    @marked[node] = true
+    @visited << node
     node.adjacents.each do |adj_node|
-      next if @marked[adj_node]
+      next if @visited.include?(adj_node)
 
       dfs(adj_node)
       @edge_to[adj_node] = node
@@ -36,6 +36,6 @@ class DepthFirstSearch
   end
 
   def has_path_to?(node)
-    @marked[node]
+    @visited.include?(node)
   end
 end
