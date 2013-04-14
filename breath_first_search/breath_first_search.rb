@@ -23,11 +23,10 @@ class BreathFirstSearch
   def shortest_path_to(node)
     return unless has_path_to?(node)
     path = []
-    current_node = node
 
-    while(current_node != @node) do
-      path.unshift(current_node) # unshift adds the node to the beginning of the array
-      current_node = @edge_to[current_node]
+    while(node != @node) do
+      path.unshift(node) # unshift adds the node to the beginning of the array
+      node = @edge_to[node]
     end
 
     path.unshift(@node)

@@ -9,7 +9,6 @@ were unvisited, and so on.
 This image shows the order in which the nodes are expanded:
 ![image](http://upload.wikimedia.org/wikipedia/commons/3/33/Breadth-first-tree.svg)
 
-
 Breath-first search is usually used to find the shortest path between two nodes
 in a graph (considering only the number of edges, it won't work for weighted graphs)
 
@@ -17,7 +16,7 @@ The steps are quite simple:
 * Put the source node into a queue and mark it as visited
 * Repeat until the queue is empty:
   - Remove the least recently added node n
-  - add each of n's unvisited neighbors to the queue and mark them as visited
+  - Add each of n's unvisited neighbors to the queue and mark them as visited
 
 ## Comparing Breath-first search and Depth-first search
 
