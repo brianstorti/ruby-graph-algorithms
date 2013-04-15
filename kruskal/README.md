@@ -1,4 +1,4 @@
-# Kruskal algorithm (soon)
+# Kruskal algorithm
 
 The Kruskal's algorithm is used to compute the [minimum spanning tree (MST)](http://en.wikipedia.org/wiki/Minimum_spanning_tree)
 of a graph. It's is classified as a greedy algorithm.
