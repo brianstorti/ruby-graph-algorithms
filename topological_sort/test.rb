@@ -16,5 +16,5 @@ graph.add_edge(node1, node5)
 graph.add_edge(node2, node3)
 graph.add_edge(node2, node4)
 
-p TopologicalSort.new(graph).reverse_post.map(&:to_s)
+p TopologicalSort.new(graph).post_order.map(&:to_s)
 # "Node #3", "Node #4", "Node #2", "Node #5", "Node #1"

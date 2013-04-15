@@ -2,11 +2,10 @@
 # The objective of this sort is do redraw the DAG so all edged
 # point upwards.
 class TopologicalSort
-  attr_accessor :reverse_post
+  attr_accessor :post_order
 
   def initialize(graph)
-    @graph = graph
-    @reverse_post = []
+    @post_order = []
     @visited = []
 
     graph.nodes.each do |node|
@@ -21,6 +20,6 @@ class TopologicalSort
       dfs(adj_node) unless @visited.include?(adj_node)
     end
 
-    @reverse_post << node
+    @post_order << node
   end
 end
