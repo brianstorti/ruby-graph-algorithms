@@ -1,7 +1,8 @@
-# Connected Components
+# Connected Components (undirected graphs)
 
 Definition: Nodes v and w are connected if there is a path between them.
 A connected componente is a maximal set of connected vertices.
+
 Goal: Preprocess graph to answer queries of the from "is v connected to w?" in
 constant time.
 
