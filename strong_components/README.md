@@ -1,0 +1,14 @@
+# Strong Components (Digraph)
+
+This implementation uses the Kosaraju's algorithm.  
+
+Definition: Vertices v and w are considered to be strongly connected if
+there is a directed path from v to w **and** a directed path from w to v.
+
+Strong connectivity is an equivalence relation:  
+* v is strongly connected to v.
+* if v is strongly connected to w, then w is strongly connected to v.
+* if v is strongly connected to w, and w to x, then v is strongly connected to x.
+
+Reverse graph: Strong components in *G* are the same as in in *Gr (reverse)*
+

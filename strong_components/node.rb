@@ -1,11 +1,12 @@
-require "set"
-
 class Node
-  attr_accessor :name, :adjacents
+  attr_accessor :name, :graph
 
   def initialize(name)
-    @adjacents = Set.new
     @name = name
+  end
+
+  def adjacents
+    graph.edges.select{|e| e.from == self}.map(&:to)
   end
 
   def to_s
