@@ -6,6 +6,8 @@ A connected componente is a maximal set of connected vertices.
 Goal: Preprocess graph to answer queries of the from "is v connected to w?" in
 constant time.
 
+![image](http://f.cl.ly/items/080u0w0k0S0e3O3K3t1n/connected_components.jpg)
+
 The relation "is connected to" is an equivalence relation:  
 * Reflexive: v is connected to v  
 * Symmetric: if v is connected to w, than w is connected to v  
