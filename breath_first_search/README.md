@@ -6,7 +6,7 @@ The BFS begins at a root node and inspects all the neighboring nodes. Then for
 each of those neighbor nodes in turn, it inspects their neighbor nodes which
 were unvisited, and so on.
 
-This image shows the order in which the nodes are expanded:
+This image shows the order in which the nodes are expanded:  
 ![image](http://upload.wikimedia.org/wikipedia/commons/3/33/Breadth-first-tree.svg)
 
 Breath-first search is usually used to find the shortest path between two nodes
