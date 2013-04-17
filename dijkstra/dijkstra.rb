@@ -23,11 +23,12 @@ class Dijkstra
 
   private
   # This method will compute the shortest path from the source node to all the
-  # other nodes in the graph
+  # other nodes in the graph.
   def compute_shortest_path
     update_distance_of_all_edges_to(Float::INFINITY)
     @distance_to[@source_node] = 0
 
+    # The prioriy queue holds a node and its distance from the source node.
     @pq.insert(@source_node, 0)
     while @pq.any?
       node = @pq.remove_min
@@ -52,10 +53,8 @@ class Dijkstra
     @distance_to[edge.to] = @distance_to[edge.from] + edge.weight
     @path_to[edge.to] = edge.from
 
-    if @pq.contains?(edge.to)
-      @pq.decrease_key(edge.to, @distance_to[edge.to])
-    else
-      @pq.insert(edge.to, @distance_to[edge.to])
-    end
+    # If the node is already in this priority queue, the only that happens is
+    # that its distance is decreased.
+    @pq.insert(edge.to, @distance_to[edge.to])
   end
 end
