@@ -14,3 +14,7 @@ code, fell free to open a pull request.
 ## License
 
 Use this code as you want. If you do use them, a reference would be appreciated, but not required.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/brianstorti/ruby-graph-algorithms/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
