@@ -2,7 +2,7 @@
 
 Goal: Given a set of tasks to be completed with precedence constraints, in
 which order should we schedule the tasks. In this example application, the
-vertices would be the tasks and the edges direction the precedence constraints.  
+vertices would be the tasks and the edges direction the precedence constraints.
 
 It's important to notice that the topological sort works just for DAGs
 (directed acyclic graphs).
