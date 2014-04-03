@@ -3,7 +3,8 @@
 Depth-first search (DFS) is a strategy for searching in a graph.
 
 The DFS starts at the source node and explores as far as possible along each
-branch before backtracking.
+branch before backtracking. Although it finds a path from a source to a target node,
+if you are interested in finding the shortest path, this is not the way to go.
 
 This image shows the order in which the nodes are expanded:  
 ![image](http://upload.wikimedia.org/wikipedia/commons/1/1f/Depth-first-tree.svg)
