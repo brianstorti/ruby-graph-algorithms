@@ -1,11 +1,4 @@
 class Graph
-  def initialize
-    @nodes = []
-  end
-
-  def add_node(node)
-    @nodes << node
-  end
 
   # We are dealing with an undirected graph,
   # so I increment the "adjacents" in both sides.
