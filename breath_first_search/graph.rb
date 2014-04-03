@@ -1,9 +1,4 @@
 class Graph
-  attr_accessor :nodes
-
-  def initialize
-    @nodes = []
-  end
 
   # We are dealing with an undirected graph,
   # so I increment the "adjacents" in both sides.
