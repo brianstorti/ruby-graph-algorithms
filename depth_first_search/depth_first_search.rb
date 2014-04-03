@@ -1,7 +1,7 @@
 class DepthFirstSearch
   def initialize(graph, source_node)
     @graph = graph
-    @node = source_node
+    @source_node = source_node
     @visited = []
     @edge_to = {}
 
@@ -16,12 +16,12 @@ class DepthFirstSearch
     path = []
     current_node = node
 
-    while(current_node != @node) do
+    while(current_node != @source_node) do
       path.unshift(current_node)
       current_node = @edge_to[current_node]
     end
 
-    path.unshift(@node)
+    path.unshift(@source_node)
   end
 
   private
