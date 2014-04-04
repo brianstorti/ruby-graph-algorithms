@@ -4,12 +4,12 @@ require_relative "depth_first_order"
 # Step 2: Run depth first search again, considering the vertices
 #         in the order given by the first dfs
 class StrongComponents
-  attr_accessor :connected_components
+  attr_accessor :strong_components
 
   def initialize(graph)
     @graph = graph
     @visited = []
-    @connected_components = {}
+    @strong_components = {}
     counter = 0
 
     graph.reverse!
@@ -25,8 +25,8 @@ class StrongComponents
   private
   def dfs(node, counter)
     @visited << node
-    @connected_components[counter] ||= []
-    @connected_components[counter] << node
+    @strong_components[counter] ||= []
+    @strong_components[counter] << node
 
     node.adjacents.each do |adj_node|
       dfs(adj_node, counter) unless @visited.include?(adj_node)
