@@ -1,8 +1,8 @@
 require 'minitest/autorun'
 
-require_relative "graph"
-require_relative "node"
-require_relative "breath_first_search"
+require_relative 'graph'
+require_relative 'node'
+require_relative 'breath_first_search'
 
 describe BreathFirstSearch do
   before do
