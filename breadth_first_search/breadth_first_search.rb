@@ -10,7 +10,7 @@
 #   - add each of n's unvisited adjacents to the queue and
 #     mark them as visited
 
-class BreathFirstSearch
+class BreadthFirstSearch
   def initialize(graph, source_node)
     @graph = graph
     @node = source_node
@@ -34,7 +34,7 @@ class BreathFirstSearch
 
   private
   def bfs(node)
-    # Remember, in the breath first search we always
+    # Remember, in the breadth first search we always
     # use a queue. In ruby we can represent both
     # queues and stacks as an Array, just by using
     # the correct methods to deal with it. In this case,

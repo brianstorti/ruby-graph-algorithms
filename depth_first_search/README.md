@@ -10,7 +10,7 @@ This image shows the order in which the nodes are expanded:
 ![image](http://upload.wikimedia.org/wikipedia/commons/1/1f/Depth-first-tree.svg)
 
 
-## Comparing Depth-first search and Breath-first search
+## Comparing Depth-first search and Breadth-first search
 
 Both algorithms are used with the same purpose: Search a node in a graph.  
 The BFS has the bonus advantage of finding the shortest path, while the DFS 

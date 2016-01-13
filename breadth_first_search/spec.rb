@@ -2,9 +2,9 @@ require 'minitest/autorun'
 
 require_relative 'graph'
 require_relative 'node'
-require_relative 'breath_first_search'
+require_relative 'breadth_first_search'
 
-describe BreathFirstSearch do
+describe BreadthFirstSearch do
   before do
     @node1 = Node.new("Node #1")
     @node2 = Node.new("Node #2")
@@ -21,7 +21,7 @@ describe BreathFirstSearch do
     graph.add_edge(@node4, @node5)
     graph.add_edge(@node1, @node5)
 
-    path = BreathFirstSearch.new(graph, @node1).shortest_path_to(@node5)
+    path = BreadthFirstSearch.new(graph, @node1).shortest_path_to(@node5)
 
     path.must_equal [@node1, @node5]
   end

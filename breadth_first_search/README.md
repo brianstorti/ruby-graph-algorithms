@@ -1,4 +1,4 @@
-# Breath-first search (BFS)
+# Breadth-first search (BFS)
 
 Breadth-first search (BFS) is a strategy for searching in a graph.
 
@@ -9,7 +9,7 @@ were unvisited, and so on.
 This image shows the order in which the nodes are expanded:  
 ![image](http://upload.wikimedia.org/wikipedia/commons/3/33/Breadth-first-tree.svg)
 
-Breath-first search is usually used to find the shortest path between two nodes
+Breadth-first search is usually used to find the shortest path between two nodes
 in a graph (considering only the number of edges, it won't work for weighted graphs)
 
 The steps are quite simple:
@@ -18,7 +18,7 @@ The steps are quite simple:
   - Remove the least recently added node n
   - Add each of n's unvisited neighbors to the queue and mark them as visited
 
-## Comparing Breath-first search and Depth-first search
+## Comparing Breadth-first search and Depth-first search
 
 Both algorithms are used with the same purpose: Search a node in a graph.  
 The BFS has the bonus advantage of finding the shortest path, while the DFS 
