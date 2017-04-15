@@ -23,7 +23,7 @@ The steps are quite simple:
 Both algorithms are used with the same purpose: Search a node in a graph.  
 The BFS has the bonus advantage of finding the shortest path, while the DFS 
 makes no guarantees about that.  
-If findind the shortest path is not the goal, both DFS and BFS have advantages
+If finding the shortest path is not the goal, both DFS and BFS have advantages
 and disadvantages, depending on the data that you are looking for.  
 A commomly used example is the search in a family tree. If the person that you are
 looking for is alive, then we can assume that this person (node) will be in the bottom
